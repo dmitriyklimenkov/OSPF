@@ -120,8 +120,13 @@ interface Ethernet0/3
 Полные конфигурации:
 
 Файл конфигурации R12 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R12.txt).
+
 Файл конфигурации R13 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R13.txt).
+
 Файл конфигурации R14 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R14.txt).
+
 Файл конфигурации R15 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R15.txt).
+
 Файл конфигурации R19 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R19.txt).
+
 Файл конфигурации R20 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R20.txt).
