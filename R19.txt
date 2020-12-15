@@ -1,0 +1,17 @@
+!
+router ospf 1
+ router-id 1.1.1.19
+ area 101 stub no-summary
+ network 152.95.24.8 0.0.0.3 area 101
+!
+ipv6 router ospf 1
+ router-id 0.0.0.19
+ area 101 stub no-summary
+!
+!
+interface Ethernet0/0
+ ip address 152.95.24.10 255.255.255.252
+ ipv6 address FE80::19 link-local
+ ipv6 enable
+ ipv6 ospf 1 area 101
+!
