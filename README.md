@@ -12,7 +12,7 @@
 
 # Схема сегмента сети:
 
-![](https://github.com/dmitriyklimenkov/OSPF/blob/main/OSPF%20%D1%81%D1%85%D0%B5%D0%BC%D0%B0.PNG)
+![]()
 
 # 1. Конфигурация R14, R15.
 Настройку OSPF произведем на примере маршрутизатора R14. На нем настроим процесс OSPF, для примера зададим статический маршрут по умолчанию. На R15 настройки аналогичные.
@@ -119,11 +119,11 @@ interface Ethernet0/3
 
 Полные конфигурации:
 
-Файл конфигурации R12 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R12.txt).
+Файл конфигурации R12 [здесь]().
 
-Файл конфигурации R13 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R13.txt).
+Файл конфигурации R13 [здесь]().
 
-Файл конфигурации R14 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R14.txt).
+Файл конфигурации R14 [здесь]().
 
 Файл конфигурации R15 [здесь](https://github.com/dmitriyklimenkov/OSPF/blob/main/R15.txt).
 
