@@ -1,0 +1,33 @@
+!
+router ospf 1
+ router-id 1.1.1.12
+ network 152.95.0.0 0.0.15.255 area 10
+ network 152.95.24.24 0.0.0.3 area 0
+ network 152.95.24.48 0.0.0.3 area 0
+!
+ipv6 router ospf 1
+ router-id 0.0.0.12
+!
+interface Ethernet0/0
+ ip address 152.95.0.1 255.255.240.0
+ ipv6 address FE80::12 link-local
+ ipv6 enable
+ ipv6 ospf 1 area 0
+!
+interface Ethernet0/1
+ ip address 152.95.24.25 255.255.255.252
+ ipv6 address FE80::12 link-local
+ ipv6 enable
+ ipv6 ospf 1 area 10
+!
+interface Ethernet0/2
+ ip address 152.95.24.49 255.255.255.252
+ ipv6 address FE80::12 link-local
+ ipv6 enable
+ ipv6 ospf 1 area 0
+!
+interface Ethernet0/3
+ ip address 152.95.24.18 255.255.255.252
+ ipv6 address FE80::12 link-local
+ ipv6 enable
+!

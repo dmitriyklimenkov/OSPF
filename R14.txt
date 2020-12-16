@@ -1,0 +1,41 @@
+router ospf 1
+ router-id 1.1.1.14
+ area 101 stub no-summary
+ network 152.95.24.4 0.0.0.3 area 0
+ network 152.95.24.8 0.0.0.3 area 101
+ network 152.95.24.48 0.0.0.3 area 0
+ default-information originate
+!
+ip route 0.0.0.0 0.0.0.0 194.14.123.2
+!
+ipv6 route ::/0 200C:C0FE:1111:10::2
+!
+ipv6 router ospf 1
+ router-id 0.0.0.14
+ area 101 stub no-summary
+ default-information originate
+!
+interface Ethernet0/0
+ ip address 152.95.24.50 255.255.255.252
+ ipv6 address FE80::14 link-local
+ ipv6 enable
+ ipv6 ospf 1 area 0
+!
+interface Ethernet0/1
+ ip address 152.95.24.5 255.255.255.252
+ ipv6 address FE80::14 link-local
+ ipv6 enable
+ ipv6 ospf 1 area 0
+!
+interface Ethernet0/2
+ ip address 194.14.123.1 255.255.255.252
+ ipv6 address FE80::14 link-local
+ ipv6 address 200C:C0FE:1111:10::1/64
+ ipv6 enable
+!
+interface Ethernet0/3
+ ip address 152.95.24.9 255.255.255.252
+ ipv6 address FE80::14 link-local
+ ipv6 enable
+ ipv6 ospf 1 area 101
+!
